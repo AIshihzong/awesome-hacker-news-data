@@ -7,11 +7,12 @@ Generated from README.md by `scripts/validate_list.py --write`. Do not edit by h
 | Source | Projects |
 |---|---:|
 | [`open-index`](#open-index) | 29 |
-| [`HackerTube data`](#hackertube-data) | 4 |
-| [`HackerBooks data`](#hackerbooks-data) | 1 |
-| [`Algolia API`](#algolia-api) | 7 |
+| [`HackerTube data`](#hackertube-data) | 19 |
+| [`HackerBooks data`](#hackerbooks-data) | 4 |
+| [`OpenPipe`](#openpipe) | 1 |
+| [`Algolia API`](#algolia-api) | 14 |
 | [`HN API`](#hn-api) | 1 |
-| [`BigQuery`](#bigquery) | 1 |
+| [`BigQuery`](#bigquery) | 2 |
 | [`own data`](#own-data) | 1 |
 | [`not stated`](#not-stated) | 8 |
 
@@ -51,18 +52,42 @@ Uses the [open-index/hacker-news](https://huggingface.co/datasets/open-index/hac
 
 ## HackerTube data
 
-Built on [HackerTube's published export](https://hackertube.org/data).
+Built on [HackerTube's published export](https://hackertube.org/data) or its public JSON API.
 
 - [HackTok](https://hacktok.org) · The "HackerTube for X" sites
+- [PsychTube](https://github.com/contofalskyR/PsychTube) · The "HackerTube for X" sites
+- [HN Screening Room](https://github.com/Benedict30/hn-screening-room) · The "HackerTube for X" sites
+- [yuanjohn01-byte/hacker-tube](https://github.com/yuanjohn01-byte/hacker-tube) · The "HackerTube for X" sites
 - [Rushikeshh-patil/hackertube-tv](https://github.com/Rushikeshh-patil/hackertube-tv) · Apps, ports and translations
 - [cq0206/HackerTube](https://github.com/cq0206/HackerTube) · Apps, ports and translations
 - [bockybocky/hackertube-zh](https://github.com/bockybocky/hackertube-zh) · Apps, ports and translations
+- [nickylin/HackerTubeApps](https://github.com/nickylin/HackerTubeApps) · Apps, ports and translations
+- [arguswaikhom/hackertube](https://github.com/arguswaikhom/hackertube) · Apps, ports and translations
+- [4apaev/hackertube](https://github.com/4apaev/hackertube) · Apps, ports and translations
+- [iTzFaisal/hackertube](https://github.com/iTzFaisal/hackertube) · Apps, ports and translations
+- [layatai/hackertube-webos](https://github.com/layatai/hackertube-webos) · Apps, ports and translations
+- [shreyasudupi/HackerTube-TV](https://github.com/shreyasudupi/HackerTube-TV) · Apps, ports and translations
+- [stym06/hackertube-chrome](https://github.com/stym06/hackertube-chrome) · Apps, ports and translations
+- [whynimoisalive/hackertube-home](https://github.com/whynimoisalive/hackertube-home) · Apps, ports and translations
+- [tunapro1234/hackertune](https://github.com/tunapro1234/hackertune) · Apps, ports and translations
+- [Offbranch](https://thesybuilder.github.io/offbranch/) · Apps, ports and translations
+- [StudyHackerTube](https://github.com/Faouzi-Blibech/study-hackertube) · Apps, ports and translations
+- [wangw0922/hackertube](https://github.com/wangw0922/hackertube) · Apps, ports and translations
 
 ## HackerBooks data
 
 Built on HackerBooks' downloadable data.
 
 - [turygo/hackerbooks-zh](https://github.com/turygo/hackerbooks-zh) · Apps, ports and translations
+- [joeseesun/hackerbooks-cn](https://github.com/joeseesun/hackerbooks-cn) · Apps, ports and translations
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks) · Apps, ports and translations
+- [PASSIONYOUNGZ/HackerBooks](https://github.com/PASSIONYOUNGZ/HackerBooks) · Apps, ports and translations
+
+## OpenPipe
+
+Uses the [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) dump, which ends in November 2023.
+
+- [saqibns/cheap-hackertube](https://github.com/saqibns/cheap-hackertube) · Analysis and research
 
 ## Algolia API
 
@@ -73,6 +98,13 @@ Calls the live [Algolia HN Search API](https://hn.algolia.com/api).
 - [HackerPods](https://hackerpods.tiktalk.ing) · The "HackerTube for X" sites
 - [ShowReel](https://showreel-hn.netlify.app) · The "HackerTube for X" sites
 - [Hackertools](https://shouvik12.github.io/hackertools) · The "HackerTube for X" sites
+- [hackerrepos](https://jatingargiitk.github.io/hackerrepos/) · The "HackerTube for X" sites
+- [DesignerTube](https://www.designertube.app) · The "HackerTube for X" sites
+- [HackerBooks (pmaxx2023)](https://hacker-books-ecru.vercel.app) · The "HackerTube for X" sites
+- [markokovac16/hackertube](https://github.com/markokovac16/hackertube) · The "HackerTube for X" sites
+- [nkodela/hackertube-rebuild](https://github.com/nkodela/hackertube-rebuild) · The "HackerTube for X" sites
+- [HacKiroTube](https://github.com/sanjayvs-shellkode/HacKiroTube) · The "HackerTube for X" sites
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks) · Apps, ports and translations
 - [amterp/amber](https://github.com/amterp/amber) · Search, trends and exploration
 - [iannuttall/hn-get](https://github.com/iannuttall/hn-get) · Infrastructure and tools
 
@@ -87,6 +119,7 @@ Calls the live [official HN API](https://github.com/HackerNews/API).
 Queries the [BigQuery public dataset](https://console.cloud.google.com/marketplace/product/y-combinator/hacker-news).
 
 - [hnrepos.com](https://hnrepos.com) · The "HackerTube for X" sites
+- [ayush-agrawal001/hackertube](https://github.com/ayush-agrawal001/hackertube) · The "HackerTube for X" sites
 
 ## own data
 

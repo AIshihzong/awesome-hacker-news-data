@@ -33,8 +33,9 @@ when you query the data yourself.
 | Label | Meaning |
 |---|---|
 | `open-index` | The project's README, site or author says it uses [open-index/hacker-news](https://huggingface.co/datasets/open-index/hacker-news) |
-| `HackerTube data` | Built on [HackerTube's published export](https://hackertube.org/data), not the raw archive |
+| `HackerTube data` | Built on [HackerTube's published export](https://hackertube.org/data) or its public JSON API, not the raw archive |
 | `HackerBooks data` | Built on HackerBooks' downloadable data |
+| `OpenPipe` | Uses the older [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) dump, which ends in November 2023 |
 | `Algolia API` · `HN API` · `BigQuery` | Queries a live source instead of the archive |
 | `own data` | Collects and ships its own data |
 | `not stated` | We could not find a source. Corrections welcome |
@@ -69,12 +70,24 @@ Mine comments for links of one kind, then rank by how many different people post
 | [HackTok](https://hacktok.org) · [repo](https://github.com/rorz/hacktok) | HackerTube videos as a vertical feed | `HackerTube data` | |
 | [OpenTube](https://github.com/vishalmysore/OpenTube) | 185k videos, filtered and measured | `open-index` | Reports accuracy and cost per pipeline stage, and builds a knowledge graph. [Write-up](https://medium.com/@visrow/karpathy-built-hackertube-i-built-opentube-20-years-of-hn-videos-filtered-af763bd270f4) |
 | [Most-recommended GitHub repos](https://x.com/digital_iot/status/2117182997229346974) | Repos, by distinct recommenders | `open-index` | An analysis thread with methodology, not a site |
+| [hackerrepos](https://jatingargiitk.github.io/hackerrepos/) · [repo](https://github.com/jatingargiitk/hackerrepos) | GitHub repos (29,109 linked by 3+ people) | `Algolia API` | Every github.com link in HN comments and stories since 2007 |
+| [DesignerTube](https://www.designertube.app) · [repo](https://github.com/panikadak/designertube) | YouTube videos for designers (1,153) | `Algolia API` | Pipeline and filtering steps are documented |
+| [PsychTube](https://github.com/contofalskyR/PsychTube) | Psychology videos and courses | `HackerTube data` | Adds psychology subreddits and Stack Exchange, with notes on findings that didn't replicate |
+| [HackerBooks (pmaxx2023)](https://hacker-books-ecru.vercel.app) · [repo](https://github.com/pmaxx2023/HackerBooks) | Books (1,800 from 85,696 comments) | `Algolia API` | A separate project from hackerbooks.org |
 | [HackerHype](https://epestr.com/hackerhype/) | The Hacker* sites themselves | `not stated` | An index of this whole genre |
 
-More HackerTube rebuilds: [itsgg/hackytube](https://github.com/itsgg/hackytube),
-[Syedomershah99/MyTube](https://github.com/Syedomershah99/MyTube),
-[domijin/HackerTube](https://github.com/domijin/HackerTube) and
-[denrase/hackertube](https://github.com/denrase/hackertube), all `open-index`.
+### More HackerTube rebuilds
+
+- [itsgg/hackytube](https://github.com/itsgg/hackytube): a straight rebuild. `open-index`
+- [Syedomershah99/MyTube](https://github.com/Syedomershah99/MyTube): a straight rebuild. `open-index`
+- [domijin/HackerTube](https://github.com/domijin/HackerTube): a straight rebuild. `open-index`
+- [denrase/hackertube](https://github.com/denrase/hackertube): a straight rebuild. `open-index`
+- [markokovac16/hackertube](https://github.com/markokovac16/hackertube): a stricter rule, 8+ distinct accounts across 3+ years, plus a "Rising" tier for newer videos. `Algolia API`
+- [ayush-agrawal001/hackertube](https://github.com/ayush-agrawal001/hackertube): ranked by distinct sharers, with a static Astro site and VPS deploy scripts. `BigQuery`
+- [nkodela/hackertube-rebuild](https://github.com/nkodela/hackertube-rebuild): one year of comments, plus LobsterTube built the same way from Lobsters. `Algolia API`
+- [HacKiroTube](https://github.com/sanjayvs-shellkode/HacKiroTube): finds recommended videos that were deleted and searches for re-uploads. `Algolia API`
+- [HN Screening Room](https://github.com/Benedict30/hn-screening-room): 6,427 videos with a For you feed and playlists, all stored in the browser. `HackerTube data`
+- [yuanjohn01-byte/hacker-tube](https://github.com/yuanjohn01-byte/hacker-tube): an independent recreation with topics, playlists and search. `HackerTube data`
 
 Want to build the next one? [`02_link_mining.sql`](queries/02_link_mining.sql) takes a URL
 pattern and returns the links ranked by how many different people posted them. Vote for what
@@ -165,6 +178,7 @@ decodes HTML. To query offline, [`scripts/build_local_db.py`](scripts/build_loca
 - [ClickHouse example dataset](https://clickhouse.com/docs/getting-started/example-datasets/hacker-news): instructions for loading HN into ClickHouse.
 - [Official HN API](https://github.com/HackerNews/API): Firebase, live, no key or rate limit.
 - [Algolia HN Search API](https://hn.algolia.com/api): full-text search with date filters. Many small projects use it instead of the archive.
+- [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news): all posts and comments up to 2023-11-01, 41.8M rows, about 11 GB.
 - [sytelus/HackerNewsData](https://github.com/sytelus/HackerNewsData): an older dump of all stories and comments up to May 2014.
 
 ## Apps, ports and translations
@@ -175,6 +189,21 @@ decodes HTML. To query offline, [`scripts/build_local_db.py`](scripts/build_loca
 - [cq0206/HackerTube](https://github.com/cq0206/HackerTube): a desktop app and Chrome extension. `HackerTube data`
 - [bockybocky/hackertube-zh](https://github.com/bockybocky/hackertube-zh): a Traditional Chinese static site. `HackerTube data`
 - [turygo/hackerbooks-zh](https://github.com/turygo/hackerbooks-zh): a Chinese mirror of HackerBooks with verified Chinese titles and Douban links. `HackerBooks data`
+- [nickylin/HackerTubeApps](https://github.com/nickylin/HackerTubeApps): a native Android app for phones, tablets and TVs. `HackerTube data`
+- [arguswaikhom/hackertube](https://github.com/arguswaikhom/hackertube): Android and iOS, with search that works offline. `HackerTube data`
+- [4apaev/hackertube](https://github.com/4apaev/hackertube): another Apple TV app, reading HackerTube's JSON API. `HackerTube data`
+- [iTzFaisal/hackertube](https://github.com/iTzFaisal/hackertube): HackerTube for Samsung (Tizen) TVs, ported from hackertube.tv. `HackerTube data`
+- [layatai/hackertube-webos](https://github.com/layatai/hackertube-webos): HackerTube for LG webOS TVs, with remote shortcuts. `HackerTube data`
+- [shreyasudupi/HackerTube-TV](https://github.com/shreyasudupi/HackerTube-TV): Fire TV and Android TV, as a fork of SmartTube. `HackerTube data`
+- [stym06/hackertube-chrome](https://github.com/stym06/hackertube-chrome): a Chrome extension that adds an HN topic to the YouTube home feed. `HackerTube data`
+- [whynimoisalive/hackertube-home](https://github.com/whynimoisalive/hackertube-home): a Chrome extension that replaces YouTube Home with HackerTube. `HackerTube data`
+- [tunapro1234/hackertune](https://github.com/tunapro1234/hackertune): a self-hosted YouTube front end with Claude Code agents vetting your subscriptions. `HackerTube data`
+- [Offbranch](https://thesybuilder.github.io/offbranch/) · [TheSyBuilder/offbranch](https://github.com/TheSyBuilder/offbranch): explore the videos on a map of 16 fields and 150 topics, in English and Chinese. `HackerTube data`
+- [StudyHackerTube](https://github.com/Faouzi-Blibech/study-hackertube): upload a course PDF and get the HackerTube video segments that explain each chapter. `HackerTube data`
+- [wangw0922/hackertube](https://github.com/wangw0922/hackertube): a self-hosted HackerTube with an English and Chinese interface. `HackerTube data`
+- [joeseesun/hackerbooks-cn](https://github.com/joeseesun/hackerbooks-cn): a Chinese edition of HackerBooks with 15,362 books and translated titles. `HackerBooks data`
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks): a Chinese HackerBooks shelf with Open Library covers and recent mentions. `HackerBooks data` + `Algolia API`
+- [PASSIONYOUNGZ/HackerBooks](https://github.com/PASSIONYOUNGZ/HackerBooks): 15,766 HackerBooks titles sorted into 32 topics, in Chinese. `HackerBooks data`
 
 ## Search, trends and exploration
 
@@ -203,6 +232,7 @@ decodes HTML. To query offline, [`scripts/build_local_db.py`](scripts/build_loca
 - [malakhov-dmitrii/hackernews-simulator](https://github.com/malakhov-dmitrii/hackernews-simulator): predicts a post's score and simulates its comments before you submit. `open-index`
 - [kevinw-openai/hackernews-openclaw-analysis](https://github.com/kevinw-openai/hackernews-openclaw-analysis): a single-topic trend report with a browsing UI. `open-index`
 - [google-research › dp_clip](https://github.com/google-research/google-research/tree/master/dp_clip): differential-privacy research that loads HN as a sparse user-by-thread matrix. `open-index`
+- [saqibns/cheap-hackertube](https://github.com/saqibns/cheap-hackertube): tests whether a plain frequency count reproduces HackerTube's LLM-filtered list. `OpenPipe`
 - [Reverse-engineering the HN ranking algorithm](https://github.com/sangaline/reverse-engineering-the-hacker-news-ranking-algorithm): a 2017 analysis of historical front-page data, which ships with the repo. `own data`
 
 ## Query library

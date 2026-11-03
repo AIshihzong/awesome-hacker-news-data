@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-LABELS = ["open-index", "HackerTube data", "HackerBooks data", "Algolia API", "HN API",
+LABELS = ["open-index", "HackerTube data", "HackerBooks data", "OpenPipe", "Algolia API", "HN API",
           "BigQuery", "own data", "not stated"]
 
 # Sections of README.md that hold projects, with their Chinese names for the index page.
@@ -35,9 +35,11 @@ DATASET_SECTION = "Datasets and APIs"
 LABEL_TEXT = {
     "open-index": ("Uses the [open-index/hacker-news](https://huggingface.co/datasets/open-index/hacker-news) archive.",
                    "使用 [open-index/hacker-news](https://huggingface.co/datasets/open-index/hacker-news) 存档。"),
-    "HackerTube data": ("Built on [HackerTube's published export](https://hackertube.org/data).",
-                        "基于 [HackerTube 公开的导出数据](https://hackertube.org/data)。"),
+    "HackerTube data": ("Built on [HackerTube's published export](https://hackertube.org/data) or its public JSON API.",
+                        "基于 [HackerTube 公开的导出数据](https://hackertube.org/data)或它的公开 JSON API。"),
     "HackerBooks data": ("Built on HackerBooks' downloadable data.", "基于 HackerBooks 提供下载的数据。"),
+    "OpenPipe": ("Uses the [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) dump, which ends in November 2023.",
+                 "使用 [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) 数据，截至 2023 年 11 月。"),
     "Algolia API": ("Calls the live [Algolia HN Search API](https://hn.algolia.com/api).",
                     "调用实时的 [Algolia HN Search API](https://hn.algolia.com/api)。"),
     "HN API": ("Calls the live [official HN API](https://github.com/HackerNews/API).",
@@ -51,7 +53,7 @@ LABEL_TEXT = {
 
 LINK = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
 TICK = re.compile(r"`([^`]+)`")
-TRAILING_LABELS = re.compile(r"((?:`[^`]+`(?: \+ |, )?)+)\.?$")
+TRAILING_LABELS = re.compile(r"((?:`[^`]+`(?: \+ )?)+)\.?$")
 
 errors = []
 
@@ -109,18 +111,6 @@ def parse_projects(path):
                 labels = TICK.findall(m.group(1)) if m else []
                 check_labels(labels, path.name, n)
                 projects.append((link.group(1), link.group(2), labels, name))
-            elif line.startswith("More HackerTube rebuilds"):
-                # A paragraph of links that share one label, ending with "all `label`."
-                para = []
-                for rest in lines[offset - 1:]:
-                    if not rest.strip():
-                        break
-                    para.append(rest)
-                para = " ".join(para)
-                labels = TICK.findall(para.rsplit("all", 1)[-1])
-                check_labels(labels, path.name, n)
-                for text, url in LINK.findall(para):
-                    projects.append((text, url, labels, name))
     return projects
 
 

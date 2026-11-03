@@ -1,0 +1,16 @@
+# Repos the daily discovery search should not suggest again, with the reason.
+# One owner/repo per line; text after the repo is ignored.
+mbernson/HackerTube              CCC talks app, not HN data
+PanDuroDev/HackerTube            Arabic channel index, not HN data
+w3cdotorg/c-est-pas-sorcier-tube borrows the HackerTube design only
+caikaidev/hackertube-cn          V2EX discussions, not HN
+KashibaiP/gittube                GitHub search API, not HN
+zyrliuwei-sys/hackertube         unrelated SaaS template
+skkhan2002p/hackertube           generic YouTube clone, no HN data
+FJWangYantao/hackertube-zh       personal copy of the data export
+vincentstanleylee-cell/hackertube copy of the data export
+flychicken067/hackertube-personal personal mashup
+Shaojie66/HackerTube-iOS         catalog is sample data only (recheck later)
+Studio149Muc/Hackertube          no README (recheck later)
+beaufortuk/hackertube            no README (recheck later)
+carlosambia/HackerTube           no README (recheck later)

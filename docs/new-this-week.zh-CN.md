@@ -4,6 +4,19 @@
 
 每周新增和更正的条目，最新的在前。同样的内容会作为[周报](https://github.com/AIshihzong/awesome-hacker-news-data/releases)发布：**Watch → Custom → Releases** 即可订阅。
 
+## 2026-11-03：第一次审核候选队列
+
+逐个核对出处后新增 26 个项目和 1 个数据集，合集现在有 76 个项目、9 个数据集。
+
+- **新的「HackerTube for X」**：[hackerrepos](https://jatingargiitk.github.io/hackerrepos/) 排了 29,109 个 GitHub 仓库，[DesignerTube](https://www.designertube.app) 选出 1,153 个给设计师看的视频，[PsychTube](https://github.com/contofalskyR/PsychTube) 做的是心理学，还有[另一个 HackerBooks](https://hacker-books-ecru.vercel.app) 用 Algolia API 排出 1,800 本书。
+- **HackerTube 上了各种屏幕**：三星、LG、Fire TV 电视应用，原生 Android 和 iOS 应用，以及两个把 HN 推荐直接放进 YouTube 的 Chrome 扩展。
+- **改了规则的重建版**：[markokovac16/hackertube](https://github.com/markokovac16/hackertube) 要求至少 8 人、跨 3 年推荐；[HacKiroTube](https://github.com/sanjayvs-shellkode/HacKiroTube) 会去找已删除视频的重新上传版本。
+- **又多了三个中文版 HackerBooks**，以及中英双语的视频主题地图 [Offbranch](https://thesybuilder.github.io/offbranch/)。
+- **新数据集**：[OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news)。[cheap-hackertube](https://github.com/saqibns/cheap-hackertube) 用它测试：简单的频次统计能不能替代 HackerTube 的 LLM 筛选。
+- `HackerTube data` 标签现在也包括读取 HackerTube 公开 JSON API 的应用。
+
+没有收录的：数据镜像、个人副本、空仓库，以及只借用名字、没用 HN 数据的项目。
+
 ## 2026-11-03 这一周：第一期
 
 合集上线，收录 50 个项目和 8 个数据集，每个都标注了实际用的数据。HackerTube 热潮第一周的重点：

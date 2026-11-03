@@ -32,8 +32,9 @@
 | 标签 | 含义 |
 |---|---|
 | `open-index` | 项目的 README、网站或作者说明使用了 [open-index/hacker-news](https://huggingface.co/datasets/open-index/hacker-news) |
-| `HackerTube data` | 基于 [HackerTube 公开的导出数据](https://hackertube.org/data)，不是原始存档 |
+| `HackerTube data` | 基于 [HackerTube 公开的导出数据](https://hackertube.org/data)或它的公开 JSON API，不是原始存档 |
 | `HackerBooks data` | 基于 HackerBooks 提供下载的数据 |
+| `OpenPipe` | 使用较早的 [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) 数据，截至 2023 年 11 月 |
 | `Algolia API` · `HN API` · `BigQuery` | 查询的是实时数据源，不是这份存档 |
 | `own data` | 自己采集并附带数据 |
 | `not stated` | 没找到数据来源，欢迎补充 |
@@ -60,12 +61,21 @@
 | [Hackertools](https://shouvik12.github.io/hackertools) | 开发者工具 | `Algolia API` |
 | [hnrepos.com](https://hnrepos.com) | GitHub 仓库 | `BigQuery` |
 | [HackTok](https://hacktok.org) | 竖屏刷 HackerTube 视频 | `HackerTube data` |
+| [hackerrepos](https://jatingargiitk.github.io/hackerrepos/) | GitHub 仓库（29,109 个，至少 3 人推荐） | `Algolia API` |
+| [DesignerTube](https://www.designertube.app) | 推荐给设计师的 YouTube 视频（1,153 个） | `Algolia API` |
+| [PsychTube](https://github.com/contofalskyR/PsychTube) | 心理学视频和课程 | `HackerTube data` |
 | [HackerHype](https://epestr.com/hackerhype/) | 这类网站本身的索引 | `not stated` |
 
 完整列表，包括客户端、移植版、搜索工具、基础设施和研究项目，见[英文 README](README.md)，
-或按数据来源分组的[索引页](docs/by-source.zh-CN.md)。中文相关的有
-[hackerbooks-zh](https://github.com/turygo/hackerbooks-zh)（HackerBooks 中文镜像，附豆瓣链接）
-和 [hackertube-zh](https://github.com/bockybocky/hackertube-zh)（繁体中文版 HackerTube）。
+或按数据来源分组的[索引页](docs/by-source.zh-CN.md)。中文相关的有：
+
+- [hackerbooks-zh](https://github.com/turygo/hackerbooks-zh)：HackerBooks 中文镜像，附豆瓣链接。
+- [hackerbooks-cn](https://github.com/joeseesun/hackerbooks-cn)：HackerBooks 中文版，15,362 本书，书名和简介有中文翻译。
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks)：中文书架，补充了 Open Library 封面和近一年的提及数。
+- [PASSIONYOUNGZ/HackerBooks](https://github.com/PASSIONYOUNGZ/HackerBooks)：15,766 本书按 32 个主题整理成中文书单。
+- [hackertube-zh](https://github.com/bockybocky/hackertube-zh)：繁体中文版 HackerTube。
+- [Offbranch](https://thesybuilder.github.io/offbranch/)：用 16 个领域、150 个主题的地图浏览 HackerTube 视频，支持中英文。
+- [wangw0922/hackertube](https://github.com/wangw0922/hackertube)：可自己部署的中英双语 HackerTube。
 
 想做下一个？[`02_link_mining.sql`](queries/02_link_mining.sql) 输入一个链接模式，就能按贴过的人数排出结果。
 想看到哪种「HackerTube for X」，可以去 [Issues](https://github.com/AIshihzong/awesome-hacker-news-data/issues) 投票。

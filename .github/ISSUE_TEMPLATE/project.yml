@@ -29,8 +29,9 @@ body:
       multiple: true
       options:
         - open-index (the open-index/hacker-news archive)
-        - HackerTube data (HackerTube's published export)
+        - HackerTube data (HackerTube's export or JSON API)
         - HackerBooks data
+        - OpenPipe (the OpenPipe/hacker-news dump)
         - Algolia API
         - HN API (official Firebase API)
         - BigQuery
