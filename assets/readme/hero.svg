@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="t d">
+<title id="t">Awesome Hacker News Data: every HackerTube for X, the datasets behind them, and the gotchas in the data</title>
+<desc id="d">Unofficial list of 50 projects and 8 datasets. Example rows: HackerTube, 6,454 YouTube videos, source open-index; HackerBooks, about 16.5k books, source not stated; HackerPods, podcasts, source Algolia API; HackTok, a vertical video feed, source HackerTube data.</desc>
+<defs>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#2a2420"/></pattern>
+<linearGradient id="glow" x1="0" y1="0" x2="1" y2="0.4"><stop offset="0" stop-color="#ff6600" stop-opacity="0.16"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="420" rx="20" fill="#16120f"/>
+<rect width="1200" height="420" rx="20" fill="url(#dots)"/>
+<rect width="1200" height="420" rx="20" fill="url(#glow)"/>
+<text x="56" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="2" fill="#a39385">AWESOME LIST · HACKER NEWS DATA</text>
+<rect x="56" y="104" width="64" height="64" rx="6" fill="#ff6600"/>
+<path d="M88 120 L108 152 L68 152 Z" fill="#ffffff"/>
+<text x="138" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#f6f0ea">Awesome</text>
+<text x="138" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ff8a3d">Hacker News Data</text>
+<text x="56" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="27" fill="#ddd2c8">Every “HackerTube for X”,</text>
+<text x="56" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="27" fill="#ddd2c8">the data behind each one,</text>
+<text x="56" y="312" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="27" fill="#ddd2c8">and the traps in that data.</text>
+<line x1="56" y1="346" x2="560" y2="346" stroke="#3a302a" stroke-width="2"/>
+<text x="56" y="384" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#a39385">50 projects · 8 datasets · source on every entry</text>
+<rect x="612" y="36" width="536" height="348" rx="16" fill="#1f1915" stroke="#3a302a" stroke-width="2"/>
+<text x="640" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="1" fill="#a39385">SITE · WHAT IT RANKS</text>
+<text x="1120" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="1" fill="#a39385" text-anchor="end">DATA</text>
+<line x1="640" y1="96" x2="1120" y2="96" stroke="#3a302a" stroke-width="2"/>
+<text x="640" y="129" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#f6f0ea">HackerTube</text>
+<text x="640" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="18" fill="#a39385">6,454 YouTube videos</text>
+<rect x="984.0" y="116" width="136.0" height="34" rx="17" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-width="1.5"/>
+<text x="1052.0" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" fill="#3fb950" text-anchor="middle">open-index</text>
+<line x1="640" y1="168" x2="1120" y2="168" stroke="#3a302a" stroke-width="2"/>
+<text x="640" y="201" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#f6f0ea">HackerBooks</text>
+<text x="640" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="18" fill="#a39385">~16.5k books</text>
+<rect x="984.0" y="188" width="136.0" height="34" rx="17" fill="#d29922" fill-opacity="0.16" stroke="#d29922" stroke-width="1.5"/>
+<text x="1052.0" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" fill="#d29922" text-anchor="middle">not stated</text>
+<line x1="640" y1="240" x2="1120" y2="240" stroke="#3a302a" stroke-width="2"/>
+<text x="640" y="273" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#f6f0ea">HackerPods</text>
+<text x="640" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="18" fill="#a39385">Podcasts and episodes</text>
+<rect x="973.2" y="260" width="146.8" height="34" rx="17" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="1046.6" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" fill="#58a6ff" text-anchor="middle">Algolia API</text>
+<line x1="640" y1="312" x2="1120" y2="312" stroke="#3a302a" stroke-width="2"/>
+<text x="640" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#f6f0ea">HackTok</text>
+<text x="640" y="372" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="18" fill="#a39385">HackerTube as a vertical feed</text>
+<rect x="930.0" y="332" width="190.0" height="34" rx="17" fill="#bc8cff" fill-opacity="0.16" stroke="#bc8cff" stroke-width="1.5"/>
+<text x="1025.0" y="354" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" fill="#bc8cff" text-anchor="middle">HackerTube data</text>
+</svg>

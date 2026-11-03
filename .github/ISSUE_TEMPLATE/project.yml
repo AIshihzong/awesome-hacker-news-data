@@ -1,0 +1,53 @@
+name: Project
+description: Suggest a project built on Hacker News data, or correct an entry
+title: "[Project] "
+labels: ["project"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link (site or repo)
+    validations:
+      required: true
+  - type: input
+    id: what
+    attributes:
+      label: What it does, in one line
+      description: Use numbers where you have them, such as "ranks 9,434 blogs from 10.7M links".
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Data source
+      multiple: true
+      options:
+        - open-index (the open-index/hacker-news archive)
+        - HackerTube data (HackerTube's published export)
+        - HackerBooks data
+        - Algolia API
+        - HN API (official Firebase API)
+        - BigQuery
+        - own data (collects its own)
+        - not stated
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence for the data source
+      description: The README line, site page or author post that says where the data comes from. Leave empty only for "not stated".
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The link works and the project is public
+          required: true
+        - label: I am the author (fine either way, it just helps us)

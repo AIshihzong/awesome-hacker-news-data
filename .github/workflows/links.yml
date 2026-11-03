@@ -17,5 +17,5 @@ jobs:
           args: >-
             --no-progress --max-retries 2 --accept 200,206,429
             --exclude '^https://x\.com/' --exclude '^https://medium\.com/' --exclude '^https://console\.cloud\.google\.com/'
-            README.md README.zh-CN.md DATA_QUALITY.md CONTRIBUTING.md
+            README.md README.zh-CN.md DATA_QUALITY.md CONTRIBUTING.md AGENTS.md docs/*.md
           fail: true
