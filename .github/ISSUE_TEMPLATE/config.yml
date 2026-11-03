@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the data quality notes first
+    url: https://github.com/AIshihzong/awesome-hacker-news-data/blob/main/DATA_QUALITY.md
+    about: Frozen scores, time zones and HTML text explain most surprising numbers.
