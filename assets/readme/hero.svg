@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="t d">
 <title id="t">Awesome Hacker News Data: every HackerTube for X, the datasets behind them, and the gotchas in the data</title>
-<desc id="d">Unofficial list of 50 projects and 8 datasets. Example rows: HackerTube, 6,454 YouTube videos, source open-index; HackerBooks, about 16.5k books, source not stated; HackerPods, podcasts, source Algolia API; HackTok, a vertical video feed, source HackerTube data.</desc>
+<desc id="d">Unofficial list of 76 projects and 9 datasets. Example rows: HackerTube, 6,454 YouTube videos, source open-index; HackerBooks, about 16.5k books, source not stated; HackerPods, podcasts, source Algolia API; HackTok, a vertical video feed, source HackerTube data.</desc>
 <defs>
 <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#2a2420"/></pattern>
 <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0.4"><stop offset="0" stop-color="#ff6600" stop-opacity="0.16"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
@@ -17,7 +17,7 @@
 <text x="56" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="27" fill="#ddd2c8">the data behind each one,</text>
 <text x="56" y="312" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Helvetica, Arial, sans-serif" font-size="27" fill="#ddd2c8">and the traps in that data.</text>
 <line x1="56" y1="346" x2="560" y2="346" stroke="#3a302a" stroke-width="2"/>
-<text x="56" y="384" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#a39385">50 projects · 8 datasets · source on every entry</text>
+<text x="56" y="384" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#a39385">76 projects · 9 datasets · source on every entry</text>
 <rect x="612" y="36" width="536" height="348" rx="16" fill="#1f1915" stroke="#3a302a" stroke-width="2"/>
 <text x="640" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="1" fill="#a39385">SITE · WHAT IT RANKS</text>
 <text x="1120" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="1" fill="#a39385" text-anchor="end">DATA</text>

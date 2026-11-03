@@ -7,11 +7,12 @@
 | 来源 | 项目数 |
 |---|---:|
 | [`open-index`](#open-index) | 29 |
-| [`HackerTube data`](#hackertube-data) | 4 |
-| [`HackerBooks data`](#hackerbooks-data) | 1 |
-| [`Algolia API`](#algolia-api) | 7 |
+| [`HackerTube data`](#hackertube-data) | 19 |
+| [`HackerBooks data`](#hackerbooks-data) | 4 |
+| [`OpenPipe`](#openpipe) | 1 |
+| [`Algolia API`](#algolia-api) | 14 |
 | [`HN API`](#hn-api) | 1 |
-| [`BigQuery`](#bigquery) | 1 |
+| [`BigQuery`](#bigquery) | 2 |
 | [`own data`](#own-data) | 1 |
 | [`not stated`](#not-stated) | 8 |
 
@@ -51,18 +52,42 @@
 
 ## HackerTube data
 
-基于 [HackerTube 公开的导出数据](https://hackertube.org/data)。
+基于 [HackerTube 公开的导出数据](https://hackertube.org/data)或它的公开 JSON API。
 
 - [HackTok](https://hacktok.org) · 「HackerTube for X」类网站
+- [PsychTube](https://github.com/contofalskyR/PsychTube) · 「HackerTube for X」类网站
+- [HN Screening Room](https://github.com/Benedict30/hn-screening-room) · 「HackerTube for X」类网站
+- [yuanjohn01-byte/hacker-tube](https://github.com/yuanjohn01-byte/hacker-tube) · 「HackerTube for X」类网站
 - [Rushikeshh-patil/hackertube-tv](https://github.com/Rushikeshh-patil/hackertube-tv) · 应用、移植和翻译
 - [cq0206/HackerTube](https://github.com/cq0206/HackerTube) · 应用、移植和翻译
 - [bockybocky/hackertube-zh](https://github.com/bockybocky/hackertube-zh) · 应用、移植和翻译
+- [nickylin/HackerTubeApps](https://github.com/nickylin/HackerTubeApps) · 应用、移植和翻译
+- [arguswaikhom/hackertube](https://github.com/arguswaikhom/hackertube) · 应用、移植和翻译
+- [4apaev/hackertube](https://github.com/4apaev/hackertube) · 应用、移植和翻译
+- [iTzFaisal/hackertube](https://github.com/iTzFaisal/hackertube) · 应用、移植和翻译
+- [layatai/hackertube-webos](https://github.com/layatai/hackertube-webos) · 应用、移植和翻译
+- [shreyasudupi/HackerTube-TV](https://github.com/shreyasudupi/HackerTube-TV) · 应用、移植和翻译
+- [stym06/hackertube-chrome](https://github.com/stym06/hackertube-chrome) · 应用、移植和翻译
+- [whynimoisalive/hackertube-home](https://github.com/whynimoisalive/hackertube-home) · 应用、移植和翻译
+- [tunapro1234/hackertune](https://github.com/tunapro1234/hackertune) · 应用、移植和翻译
+- [Offbranch](https://thesybuilder.github.io/offbranch/) · 应用、移植和翻译
+- [StudyHackerTube](https://github.com/Faouzi-Blibech/study-hackertube) · 应用、移植和翻译
+- [wangw0922/hackertube](https://github.com/wangw0922/hackertube) · 应用、移植和翻译
 
 ## HackerBooks data
 
 基于 HackerBooks 提供下载的数据。
 
 - [turygo/hackerbooks-zh](https://github.com/turygo/hackerbooks-zh) · 应用、移植和翻译
+- [joeseesun/hackerbooks-cn](https://github.com/joeseesun/hackerbooks-cn) · 应用、移植和翻译
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks) · 应用、移植和翻译
+- [PASSIONYOUNGZ/HackerBooks](https://github.com/PASSIONYOUNGZ/HackerBooks) · 应用、移植和翻译
+
+## OpenPipe
+
+使用 [OpenPipe/hacker-news](https://huggingface.co/datasets/OpenPipe/hacker-news) 数据，截至 2023 年 11 月。
+
+- [saqibns/cheap-hackertube](https://github.com/saqibns/cheap-hackertube) · 分析和研究
 
 ## Algolia API
 
@@ -73,6 +98,13 @@
 - [HackerPods](https://hackerpods.tiktalk.ing) · 「HackerTube for X」类网站
 - [ShowReel](https://showreel-hn.netlify.app) · 「HackerTube for X」类网站
 - [Hackertools](https://shouvik12.github.io/hackertools) · 「HackerTube for X」类网站
+- [hackerrepos](https://jatingargiitk.github.io/hackerrepos/) · 「HackerTube for X」类网站
+- [DesignerTube](https://www.designertube.app) · 「HackerTube for X」类网站
+- [HackerBooks (pmaxx2023)](https://hacker-books-ecru.vercel.app) · 「HackerTube for X」类网站
+- [markokovac16/hackertube](https://github.com/markokovac16/hackertube) · 「HackerTube for X」类网站
+- [nkodela/hackertube-rebuild](https://github.com/nkodela/hackertube-rebuild) · 「HackerTube for X」类网站
+- [HacKiroTube](https://github.com/sanjayvs-shellkode/HacKiroTube) · 「HackerTube for X」类网站
+- [WenwenXdaddy/hackerbooks](https://github.com/WenwenXdaddy/hackerbooks) · 应用、移植和翻译
 - [amterp/amber](https://github.com/amterp/amber) · 搜索、趋势和探索
 - [iannuttall/hn-get](https://github.com/iannuttall/hn-get) · 基础设施和工具
 
@@ -87,6 +119,7 @@
 查询 [BigQuery 公开数据集](https://console.cloud.google.com/marketplace/product/y-combinator/hacker-news)。
 
 - [hnrepos.com](https://hnrepos.com) · 「HackerTube for X」类网站
+- [ayush-agrawal001/hackertube](https://github.com/ayush-agrawal001/hackertube) · 「HackerTube for X」类网站
 
 ## own data
 

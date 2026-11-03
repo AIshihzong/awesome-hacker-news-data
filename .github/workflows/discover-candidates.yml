@@ -39,6 +39,8 @@ jobs:
             | grep -oiE 'github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' \
             | sed -E 's#^github\.com/##I; s#\.git$##' | tr 'A-Z' 'a-z' | sort -u > known.txt
           echo "${GITHUB_REPOSITORY,,}" >> known.txt
+          # Repos a maintainer already reviewed and left out.
+          grep -vE '^\s*(#|$)' .github/discover-skip.txt | awk '{ print tolower($1) }' >> known.txt
 
           : > found.tsv
           for q in "${queries[@]}"; do

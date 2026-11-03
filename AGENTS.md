@@ -17,8 +17,9 @@ find a statement, the label is `not stated`.
 | Label | Means | Evidence to look for |
 |---|---|---|
 | `open-index` | Uses the open-index/hacker-news archive | README, site or post naming the dataset or its `hf://` path |
-| `HackerTube data` | Uses HackerTube's export | Mentions hackertube.org/data |
+| `HackerTube data` | Uses HackerTube's export or its JSON API | Mentions hackertube.org/data or calls hackertube.org/api |
 | `HackerBooks data` | Uses HackerBooks' data | Mentions HackerBooks' download |
+| `OpenPipe` | Uses the OpenPipe/hacker-news dump | Names the dataset |
 | `Algolia API` | Calls hn.algolia.com | README or code calling the API |
 | `HN API` | Calls the Firebase API | README or code calling hacker-news.firebaseio.com |
 | `BigQuery` | Queries `bigquery-public-data.hacker_news` | README or code |
@@ -50,10 +51,13 @@ A table row in the "HackerTube for X" table, or one bullet elsewhere:
 
 1. Run `python3 scripts/validate_list.py --write` and commit the regenerated `docs/by-source*.md`.
    It must report 0 errors. It also checks that the counts in `assets/readme/hero*.svg` match the
-   README, so update those if you add a project.
+   README. If you add a project, change the counts in `scripts/draw_hero.py` and run
+   `python3 scripts/draw_hero.py assets/readme`.
 2. If the project belongs in the Chinese table in `README.zh-CN.md`, add it there too.
 3. Add a line to `docs/new-this-week.md` and `docs/new-this-week.zh-CN.md`.
 4. Numbers that change, such as HN points or star counts, carry the date you checked them.
+5. If you review a discovery candidate and leave it out, add it to `.github/discover-skip.txt`
+   with the reason, so the daily search stops suggesting it.
 
 ## Queries
 

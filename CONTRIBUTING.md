@@ -11,7 +11,7 @@ To add a project:
    exploration, infrastructure, or analysis.
 2. **Write one line** on what it does. Use concrete numbers where you have them
    ("ranks 9,434 blogs from 10.7M links", not "a great tool for blogs").
-3. **Label the data source** with `open-index`, `HackerTube data`, `HackerBooks data`,
+3. **Label the data source** with `open-index`, `HackerTube data`, `HackerBooks data`, `OpenPipe`,
    `Algolia API`, `HN API`, `BigQuery`, `own data` or `not stated`. Link the README line, site
    page or author post that backs the label in your PR description. If you can't find one, use
    `not stated`.
